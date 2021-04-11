@@ -3,8 +3,11 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection'
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import Services from '../components/Services'
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import Services from '../components/Services';
+import Projects from '../components/Projects/';
+import Contact from '../components/Contact'
+import ContactForm from '../components/ContactForm/ContactForm'
+import { homeObjOne, homeObjTwo, homeObjThree} from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -21,8 +24,14 @@ const Home = () => {
         <HeroSection />
         <InfoSection {...homeObjOne} />
         <InfoSection {...homeObjTwo} />
-        <Services />
         <InfoSection {...homeObjThree} />
+        <Services />
+        <Projects />
+      
+        
+        
+        <Contact />
+        <ContactForm />
         <Footer />
         </>
     );

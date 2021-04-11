@@ -1,0 +1,16 @@
+body{
+  background-color: #87c9b4;;
+}
+
+
+.container {
+    max-width: 45em;
+    margin: 5em auto;
+  }
+  .img-nzoom {
+    max-width: 20em;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  

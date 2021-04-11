@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Video from'../../videos/image.jpg';
+import Video from'../../videos/video.mp4';
 import {Button} from '../ButtonElement';
 import { 
 HeroContainer,
@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <HeroP>
                 Front-end / Graphic design</HeroP>
                 <HeroBtnWrapper>
-                    <Button to='signup'
+                    <Button to='Projects'
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary="true"

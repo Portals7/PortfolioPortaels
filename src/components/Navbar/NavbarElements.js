@@ -111,7 +111,7 @@ text-decoration: none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: red;
+    background: orange;
     color: #010606;
 }
 `

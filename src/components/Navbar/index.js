@@ -10,15 +10,15 @@ NavMenu,
 NavItem, 
 NavLinks,
 NavBtn,
-NavBtnLink
+NavBtnLink,
 } from './NavbarElements';
-const Navbar = () => {
+
     
    
 
-/*
+
 const Navbar = ({ toggle }) => {
-    const [scrollNav, setScrollNav] = useState=(false);
+    const [scrollNav, setScrollNav] = useState(false);
     
     const changeNav = () => {
         if(window.scollY >= 80) {
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
     }, []);
 
   
- */
+ 
 const toggleHome = () => {
         scroll.scrollToTop();
     };
@@ -45,22 +45,13 @@ const toggleHome = () => {
     return (
         <>
     <IconContext.Provider value = {{color: '#0ead9d'}}>
-        <Nav /* scrollNav={scrollNav} */>
+        <Nav scrollNav={scrollNav} >
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}>Portfolio</NavLogo>
-                <MobileIcon /* onClick={toggle} */>
+                <MobileIcon  onClick={toggle} >
                     <FaBars/>
                 </MobileIcon>
                 <NavMenu>
-                    <NavItem>
-                        <NavLinks to="about"
-                        smooth={true}
-                        duration={500} 
-                        spy={true} 
-                        exact='true'
-                        offset={-80}
-                        >About</NavLinks>
-                    </NavItem>
                     <NavItem>
                         <NavLinks to="discover"
                         smooth={true}
@@ -71,6 +62,15 @@ const toggleHome = () => {
                         >Discover</NavLinks>
                     </NavItem>
                     <NavItem>
+                        <NavLinks to="about"
+                        smooth={true}
+                        duration={500} 
+                        spy={true} 
+                        exact='true'
+                        offset={-100}
+                        >About</NavLinks>
+                    </NavItem>
+                    <NavItem>
                         <NavLinks to="services"
                         smooth={true}
                         duration={500} 
@@ -78,6 +78,15 @@ const toggleHome = () => {
                         exact='true'
                         offset={-80}
                         >Services</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="Projects"
+                        smooth={true}
+                        duration={500} 
+                        spy={true} 
+                        exact='true'
+                        offset={-100}
+                        >Projects</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="contact"
@@ -101,5 +110,3 @@ const toggleHome = () => {
 };
 
 export default Navbar;
- 
-

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../ButtonElement';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img }
+//import { Button } from '../ButtonElement';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img, Button }
     from './infoElements'
 
 const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
@@ -16,7 +16,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                                 </Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to="home"
+                                    <Button to='contact'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
